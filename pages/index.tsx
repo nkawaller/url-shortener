@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Yet Another Link Shortner</title>
+        <title>URL Shortener</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header>
@@ -55,7 +55,7 @@ export default function Home() {
       </Header>
       <Content className={styles.content}>
         <div className={styles.shortner}>
-          <Title level={5}>Copy &amp; Paste your lengthy link</Title>
+          <Title level={5}>Copy &amp; Paste your link</Title>
           <Form
             form={form}
             onFinish={onFinish}
@@ -68,7 +68,7 @@ export default function Home() {
                   message: 'Please paste a correct link',
                   type: 'url',
                 }]}>
-                  <Input placeholder="https://my-super-long-link.com/blah-blah-blah-blah-blah-blah-blah-blah-blah-blah-blah-blah" size="large"/>
+                  <Input placeholder="https://my-original-link.com/" size="large"/>
                 </Form.Item>
               </div>
               <div className={styles.linkFieldButton}>
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </Content>
       <Footer className={styles.footer}>
-        Yet Another Link Shortener (YALS) &copy; 2021
+        URL Shortener &copy; 2021
       </Footer>
     </Layout>
   )
